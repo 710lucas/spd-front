@@ -1,0 +1,51 @@
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    gap: 1rem;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+input{
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    width: 300px;
+    transition: 0.2s;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.registerLink{
+    color: var(--blue);
+    text-decoration: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    color: black;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+button:hover{
+    background-color: var(--blue);
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}

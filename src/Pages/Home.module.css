@@ -1,0 +1,269 @@
+.homePageContainer{
+    background-color: hsl(0, 0%, 95%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.header{
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    height: fit-content;
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: -webkit-fill-available;
+}
+
+.title{
+    font-weight: 600;
+}
+
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userImage{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    background-color: gray;
+}
+
+
+.documents{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    row-gap: 0rem;
+    max-width: -webkit-fill-available;
+}
+
+.document{
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    height: fit-content;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: linear 0.2s;
+    display: flex;
+    flex-direction: column;
+    width: 30ch;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    min-width: 30ch;
+}
+
+.documentOtherInfo{
+    display: flex;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: gray;
+    gap: 1rem;
+}
+
+.documentName{
+    font-weight: 600;
+    font-size: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}   
+
+.documentId{
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.documentOtherStatus{
+    background-color: rgb(255, 157, 92);
+}
+.documentOtherStatus:hover{
+    background-color: rgb(255, 252, 67);
+}
+
+.documentOtherStatus .documentStatus{
+    color: black;
+    font-weight: 700;
+}
+
+.openDocumentModalContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    transition: 0.2s linear;
+
+}
+
+.openDocumentModal{
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    height: fit-content;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    max-width: 90%;
+}
+
+.openDocumentModalHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.openDocumentModalContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0rem;
+}
+
+.closeModal{
+    padding: 0.25rem;
+    color: black;
+    transition: linear 0.3s;
+    cursor: pointer;
+}
+
+.closeModal:hover{
+    color: red;
+    font-weight: 700;
+}
+
+.documentDownloadButton{
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: linear 0.2s;
+    width: fit-content;
+
+    backdrop-filter: saturate(1.5);
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.documentDownloadButton:hover{
+    background-color: var(--blue);
+}
+
+.newDocumentContainer{
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.newDocumentButton{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: linear 0.2s;
+    width: fit-content;
+    background-color: white;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.newDocumentButton:hover{
+    background-color: var(--blue);
+}
+
+.documentActions{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newDocumentModalContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0rem;
+}
+
+.newDocumentModal{
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    height: fit-content;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: linear 0.2s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.metadataContainer{
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem 0rem;
+}
+
+.documentMetadata .metadataContainer {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.metadata{
+    font-weight: 600;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+.textInput{
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    font-weight: 400;
+    background-color: transparent;
+}   
+
+.searchBar{
+    max-width: 90%;
+    margin: 1rem;
+}
+
+.logoutButton{
+    font-size: 0.75rem;
+    color: gray;
+    cursor: pointer;
+}
